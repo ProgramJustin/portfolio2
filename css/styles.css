@@ -35,14 +35,25 @@ body {
   border: 1px solid black;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   background-color: white;
 
 }
-#giantJustin {
-  width: 30%;
-  height: auto;
-  border-radius: 10px;
+.profileImage {
+  flex: 1;
+height: 400px;
+background-image: url(../img/giantJustin.jpg);
+background-size: cover;
+background-position: center;
+display: flex;
+flex-direction: column;
+}
+
+.profileImage h1 {
+  position: relative;
+  transform: rotate(90deg);
+  top: 100px;
+  left: -100px;
 }
 
 @media screen and (min-width: 500px) {
