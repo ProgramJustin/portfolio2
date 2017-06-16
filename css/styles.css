@@ -16,6 +16,10 @@ body {
   background-color: #FFF;
   -webkit-font-smoothing: antialiased;
 }
+.grid {
+  width: 75%;
+  margin:auto;
+}
 /*PARENT*/
 .row {
   display: flex;
