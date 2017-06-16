@@ -1,0 +1,39 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-size: 1.2em;
+  line-height: 1.375em;
+  padding: 0;
+  margin: 0;
+  background-color: #FFF;
+  -webkit-font-smoothing: antialiased;
+}
+/*PARENT*/
+.row {
+  display: flex;
+  flex-direction: column;
+}
+/*PARENT*/
+.col {
+  flex: 1;
+  padding: .6em;
+  margin: .6em;
+  background-color: hsla(195, 60%, 50%, 1);
+  border: 1px solid black;
+}
+
+@media screen and (min-width: 500px) {
+  .row {
+    display: flex;
+    flex-direction: row;
+
+  }
+}
