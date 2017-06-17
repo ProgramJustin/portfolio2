@@ -15,9 +15,7 @@ body {
   padding: 0;
   margin: auto;
   background-color: gray;
-
   -webkit-font-smoothing: antialiased;
-
 }
 
 /*PARENT*/
@@ -26,18 +24,16 @@ body {
   height: 100%;
   display: flex;
   flex-direction: column;
-
 }
 /*PARENT*/
 .col {
   max-width: 100%;
-  height: 100%;
   flex: 1;
   padding: .6em;
   margin: .6em;
   border: 1px solid black;
   display: flex;
-  /*flex-direction: column;*/
+  flex-direction: column;
   align-items: flex-start;
   background-color: white;
 
@@ -45,7 +41,10 @@ body {
 .header {
 
   display: flex;
-  height: 600px;
+  flex-direction: row;
+
+
+  /*height: 600px;*/
   background-image: linear-gradient(
     rgba(100, 0, 0, 0.45),
     rgba(100, 0, 0, 0.45)
@@ -57,22 +56,27 @@ body {
     background-position: left;
     background-repeat: no-repeat;
     background-color: black;
-    align-items: center;
-    justify-content: center;
+    /*justify-content: flex;*/
     color: white;
 
 }
-.header h1 {
-  font-size: 80px;
-}
-/*
-.profileImage {
-  flex: 1;
+.header div {
+  background: transparent;
 
+}
+
+.header h1 {
+
+  border: 1px solid white;
+
+}
+/*.profileImage {
+  flex: 1;
 display: flex;
 flex-direction: column;
-}
+}*/
 
+/*
 .profileImage h1 {
   position: relative;
   display: inline-block;
@@ -93,13 +97,8 @@ flex-direction: column;
     display: flex;
     flex-direction: row;
   }
-
-}
-@media screen and (min-width: 500px) {
-  .row {
-    display: flex;
-    flex-direction: row;
+  .header {
+    flex-direction: column;
   }
-
 
 }
