@@ -122,3 +122,11 @@ body {
   }
 
 }
+@media screen and (max-width: 499px) {
+
+  .header {
+    flex-direction: column;
+    background-position: center;
+  }
+
+}
