@@ -44,7 +44,7 @@ body {
   flex-direction: row;
 
 
-  /*height: 600px;*/
+  height: 600px;
   background-image: linear-gradient(
     rgba(100, 0, 0, 0.45),
     rgba(100, 0, 0, 0.45)
@@ -62,19 +62,39 @@ body {
 }
 .header div {
   background: transparent;
-
+  align-self: center;
+  margin: 0;
+  padding: 0;
 }
 
-.header h1 {
-
-  border: 1px solid white;
-
-}
-/*.profileImage {
+.profileImage {
   flex: 1;
-display: flex;
-flex-direction: column;
-}*/
+  display: flex;
+  flex-direction: row;
+
+}
+.nextToProfile {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end;
+  color: white;
+
+
+}
+.header h1 {
+  border: 1px solid white;
+  align-self: flex-end;
+}
+.header .nextToProfile a {
+  /*display: inline;*/
+  align-self: flex-end;
+  border: 1px solid black;
+  margin: 0 40px;
+  color: white;
+
+}
+
 
 /*
 .profileImage h1 {
