@@ -30,11 +30,10 @@ body {
 /*PARENT*/
 .col {
   max-width: 100%;
-
+  justify-content: center;
   flex: 1;
   padding: .6em;
   margin: .6em;
-  border: 1px solid black;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -74,31 +73,43 @@ body {
   flex: 1;
   display: flex;
   flex-direction: row;
+  width: 100%;
   max-width: 100%;
 }
 .nextToProfile {
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
-  align-items: flex-end;
+  justify-content: center;
+  align-items: center;
   color: white;
   overflow: auto;
-
+  width: 100%;
 
 }
 .header h1 {
-  border: 1px solid white;
+  align-self: center;
+  font-size: 300%;
+  display: inline
+  padding:60px;
+  letter-spacing: 1px;
   align-self: flex-end;
+  font-family: 'Poiret One', cursive;
 
 
 }
 .header .nextToProfile a {
   /*display: inline;*/
   align-self: flex-end;
-  border: 1px solid black;
+
   margin: 0 40px;
   color: white;
-
+}
+.header img:first-child {
+  border-radius: 100px;
+}
+.header img {
+  width: 50px;
+  height: 50px
 }
 
 /*
@@ -124,12 +135,13 @@ body {
 
 }
 
-.belowHeader .col {
+.belowHeader .col:first-child {
   position: relative;
   height: 100%;
   max-width: 100%;
   align-content: center;
   background-color: black;
+
 }
 
 
@@ -138,9 +150,9 @@ body {
 #sun {
     align-self: center;
     position: relative;
-    top: 150px;
-    width: 200px;
-    height: 200px;
+    top: 100px;
+    width: 100px;
+    height: 100px;
     border-width: 2px;
     border-style: solid;
     border-radius: 100%;
@@ -151,8 +163,8 @@ body {
     align-self: center;
     position: relative;
 
-    height:75px;
-    width: 75px;
+    height:40px;
+    width: 40px;
     border-radius:  100%;
 
 }
@@ -161,13 +173,13 @@ body {
 #earth-orbit {
     align-self: center;
     position:relative;
-    bottom: 100px;
-    width: 300px;
-    height: 300px;
+    bottom: 50px;
+    width: 200px;
+    height: 200px;
     border-width: 2px;
     border-style: dotted;
     border-color: black;
-    border-radius: 50%;
+    border-radius: 100%;
 
        -webkit-animation: spin-right 10s linear infinite;
      -moz-animation: spin-right 10s linear infinite;
@@ -190,8 +202,10 @@ body {
 
 
 .think {
-  background: url(../img/us.jpg);
+  background: url(../img/us.jpg) left;
   background-size: cover;
+  background-position: left;
+  height: 400px;
 }
 @media screen and (min-width: 500px) {
   .row {
@@ -200,7 +214,9 @@ body {
   }
   .header {
     flex-direction: column;
+    font-size: 25px;
   }
+
 
 }
 @media screen and (max-width: 499px) {
@@ -208,11 +224,13 @@ body {
   .header {
     flex-direction: column;
     background-position: center;
+    font-size: 16px;
 
   }
   .header .profileImage {
     align-self: stretch;
     flex: 1;
+
   }
   .profileImage  h1 {
     align-items: stretch;
