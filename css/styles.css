@@ -220,13 +220,37 @@ body {
   max-width: 100%;
   flex-direction: column;
   flex-grow: 1;
+  background-color: #3062F9;
 }
 .think img {
   align-self: center;
   width: 49%;
   flex: 1;
-  box-shadow: 6px 6px 6px darkgray;
+  box-shadow: 6px 6px 6px black;
 
+
+}
+@media screen and (min-width: 1800px) {
+  .header {
+    height: 1200px;
+    font-size: 50px;
+  }
+  .header h1 {
+    font-size: 110px;
+  }
+  .header img {
+    height: 100px;
+    width:  100px;
+  }
+}
+@media screen and (min-width: 1750px) {
+  .header {
+    height: 1200px;
+  }
+  
+  .think img {
+    width: 25%;
+  }
 }
 @media screen and (min-width: 500px) {
   .row {
