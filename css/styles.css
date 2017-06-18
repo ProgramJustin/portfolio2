@@ -101,8 +101,11 @@ body {
   /*display: inline;*/
   align-self: flex-end;
 
-  margin: 0 40px;
+  margin: 40px;
   color: white;
+}
+.nextToProfile a:nth-child(2) {
+  align-self: center;
 }
 .header img:first-child {
   border-radius: 100px;
