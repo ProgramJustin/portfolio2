@@ -28,7 +28,7 @@ body {
 }
 /*PARENT*/
 .col {
-  box-shadow: 10px 10px 10px darkgrey;
+  box-shadow: 10px 10px 10px darkgray;
   max-width: 100%;
   justify-content: center;
   flex: 1;
@@ -226,7 +226,7 @@ color: white;
 }
 .think {
   flex: 1;
-  border: 1px solid black;
+
   flex: 0;
   max-height: 100%;
   max-width: 100%;
@@ -234,14 +234,7 @@ color: white;
   flex-grow: 1;
 
 }
-.think img {
-  align-self: center;
-  width: 49%;
-  flex: 1;
-  box-shadow: 6px 6px 6px black;
 
-
-}
 .think h1 {
   display: inline;
   margin: 5px 0;
@@ -278,14 +271,10 @@ align-self: center;
   top: 10px;
 }
 .binoculars {
-  border: 15px solid darkgray;
-  border-top-left-radius: 40px;
-  border-bottom-left-radius: 40px;
-  border-top-right-radius: 40px;
-  border-bottom-right-radius: 40px;
+
   margin: 0;
-  padding: 0;
-  background-color: #383838;
+  padding: 10px 15px;
+  background: url(../img/map.jpg);
 }
 .binoculars .col {
   box-shadow: none;
@@ -294,7 +283,7 @@ align-self: center;
   border-top-right-radius: 50px;
   border-bottom-right-radius: 50px;
   margin: 0;
-  padding: 0;
+  padding: 10px;
   background-color: #383838;
 }
 .binoculars img {
