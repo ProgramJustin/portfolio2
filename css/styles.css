@@ -16,19 +16,7 @@ body {
   line-height: 1.375em;
   padding: 0;
   margin: auto;
-  background-color: white;;
   -webkit-font-smoothing: antialiased;
-  background-image: linear-gradient(
-    rgba(100, 0, 0, 0.45),
-    rgba(100, 0, 0, 0.45)
-    ), url(../img/openRoad.jpg);
-    /*-webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;*/
-    background-size: 100% 60%;
-    background-position: top left;
-    background-repeat: no-repeat;
-    background-color: white;
 }
 
 /*PARENT*/
@@ -40,6 +28,7 @@ body {
 }
 /*PARENT*/
 .col {
+  box-shadow: 10px 10px 10px darkgrey;
   max-width: 100%;
   justify-content: center;
   flex: 1;
@@ -49,7 +38,6 @@ body {
   flex-direction: column;
   align-items: flex-start;
   background-color: white;
-  
 }
 .header {
 
@@ -58,16 +46,38 @@ body {
 
 
   height: 600px;
-
+  background-image: linear-gradient(
+    rgba(100, 0, 0, 0.45),
+    rgba(100, 0, 0, 0.45)
+    ), url(../img/openRoad.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-color: black;
     /*justify-content: flex;*/
     color: white;
 
 }
 .header div {
+  box-shadow: none;
   background: transparent;
   align-self: center;
   margin: 0;
   padding: 0;
+}
+.header h1 {
+  align-self: center;
+  font-size: 300%;
+  display: inline
+  padding:60px;
+  letter-spacing: 1px;
+  align-self: flex-end;
+  font-family: 'Poiret One', cursive;
+  border: 2px solid grey;
+
 }
 
 .profileImage {
@@ -84,17 +94,6 @@ body {
   color: white;
   overflow: auto;
   width: 100%;
-
-}
-.header h1 {
-  align-self: center;
-  font-size: 300%;
-  display: inline
-  padding:60px;
-  letter-spacing: 1px;
-  align-self: flex-end;
-  font-family: 'Poiret One', cursive;
-
 
 }
 .header .nextToProfile a {
@@ -145,6 +144,10 @@ body {
   align-content: center;
   background-color: black;
 
+}
+.belowHeader .col:last-child {
+  background: url(../img/bern.jpg);
+  background-size: cover;
 }
 
 
@@ -220,8 +223,9 @@ body {
 }
 .think img {
   align-self: center;
-  width: 30%;
+  width: 49%;
   flex: 1;
+  box-shadow: 6px 6px 6px darkgray;
 
 }
 @media screen and (min-width: 500px) {
