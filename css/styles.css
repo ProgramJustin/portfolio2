@@ -134,7 +134,7 @@ body {
   max-height: 100%;
   max-width: 100%;
   align-items: stretch;
-
+  color: white;
 }
 
 .belowHeader .col:first-child {
@@ -143,12 +143,17 @@ body {
   max-width: 100%;
   align-content: center;
   background-color: black;
-
+color: white;
 }
 .belowHeader .col:last-child {
   background: url(../img/bern.jpg);
   background-size: cover;
 }
+.belowHeader .col:first-child h1 {
+  position: absolute;
+  align-self: center;
+}
+
 
 
 
@@ -163,6 +168,7 @@ body {
     border-style: solid;
     border-radius: 100%;
     background-color: red;
+    border: 2px solid red;
 }
 
 #earth {
@@ -183,7 +189,6 @@ body {
     width: 200px;
     height: 200px;
     border-width: 2px;
-    border-style: dotted;
     border-color: black;
     border-radius: 100%;
 
@@ -220,7 +225,7 @@ body {
   max-width: 100%;
   flex-direction: column;
   flex-grow: 1;
-  background-color: #3062F9;
+
 }
 .think img {
   align-self: center;
@@ -229,6 +234,39 @@ body {
   box-shadow: 6px 6px 6px black;
 
 
+}
+.think h1 {
+  display: inline;
+  margin: 5px 0;
+align-self: center;
+}
+
+.think span:first-child {
+  color: #757575;
+}
+.think span:nth-child(2) {
+  color: #9E9E9E;
+}
+#google span:nth-child(1) {
+  color: #4285F4;
+}
+#google span:nth-child(2) {
+  color: #EA4335;
+}
+#google span:nth-child(3) {
+  color: #FBBC05;
+}
+#google span:nth-child(4) {
+  color: #3D85FD;
+}
+#google span:nth-child(5) {
+  color: #34A853;
+}
+#google span:nth-child(6) {
+  color: #EA4335;
+}
+#google span {
+  
 }
 @media screen and (min-width: 1800px) {
   .header {
@@ -247,7 +285,7 @@ body {
   .header {
     height: 1200px;
   }
-  
+
   .think img {
     width: 25%;
   }
