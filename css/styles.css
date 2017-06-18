@@ -269,8 +269,10 @@ align-self: center;
 #google span:nth-child(6) {
   color: #EA4335;
 }
-#google span {
-  transform: scale3d();
+#google span:hover {
+  transform: rotate(10deg);
+  position: relative;
+  top: 10px;
 }
 @media screen and (min-width: 1800px) {
   .header {
