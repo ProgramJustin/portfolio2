@@ -39,6 +39,9 @@ body {
   align-items: flex-start;
   background-color: white;
 }
+.col:hover {
+  box-shadow: none;
+}
 .header {
 
   display: flex;
@@ -274,6 +277,31 @@ align-self: center;
   position: relative;
   top: 10px;
 }
+.binoculars {
+  border: 15px solid darkgray;
+  border-top-left-radius: 40px;
+  border-bottom-left-radius: 40px;
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px;
+  margin: 0;
+  padding: 0;
+  background-color: #383838;
+}
+.binoculars .col {
+  box-shadow: none;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  margin: 0;
+  padding: 0;
+  background-color: #383838;
+}
+.binoculars img {
+  width: 100%;
+  border-radius: 100px;
+}
+
 @media screen and (min-width: 1800px) {
   .header {
     height: 1200px;
@@ -287,15 +315,7 @@ align-self: center;
     width:  100px;
   }
 }
-@media screen and (min-width: 1750px) {
-  .header {
-    height: 1200px;
-  }
 
-  .think img {
-    width: 25%;
-  }
-}
 @media screen and (min-width: 500px) {
   .row {
     display: flex;
@@ -314,7 +334,6 @@ align-self: center;
     flex-direction: column;
     background-position: center;
     font-size: 16px;
-
   }
   .header .profileImage {
     align-self: stretch;
