@@ -96,7 +96,6 @@ body {
   letter-spacing: 1px;
   align-self: flex-end;
   font-family: 'Poiret One', cursive;
-  border: 2px solid grey;
 }
 .profileImage {
   flex: 1;
