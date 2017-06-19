@@ -1,4 +1,3 @@
-
 html, body {
   box-sizing: border-box;
 
@@ -11,14 +10,13 @@ html, body {
   margin: 0;
 }
 body {
-
+  background-color: #BFBFBF;
   font-size: 1.2em;
   line-height: 1.375em;
   padding: 0;
   margin: auto;
   -webkit-font-smoothing: antialiased;
 }
-
 /*PARENT*/
 .row {
   max-width: 100%;
@@ -42,13 +40,11 @@ body {
 .col:hover {
   box-shadow: none;
 }
+/*ROW HEADER*/
 .header {
-
   display: flex;
   flex-direction: row;
-
-
-  height: 600px;
+  height: 100vh;
   background-image: linear-gradient(
     rgba(100, 0, 0, 0.45),
     rgba(100, 0, 0, 0.45)
@@ -60,8 +56,29 @@ body {
     background-position: left;
     background-repeat: no-repeat;
     background-color: black;
-    /*justify-content: flex;*/
     color: white;
+}
+ .header .tab {
+  position: fixed;
+  z-index: 2;
+  top: -120px;
+  right: 40px;
+  background-color: white;
+  height: 150px;
+  width: 100px;
+  text-align: center;
+}
+.tab:hover {
+  top: 0;
+}
+.tab a {
+  text-decoration: none;
+  color: black;
+}
+.tab a p {
+  background-color: none;
+  margin: 30px 0;
+  font-family: 'Poiret One', cursive;
 
 }
 .header div {
@@ -80,9 +97,7 @@ body {
   align-self: flex-end;
   font-family: 'Poiret One', cursive;
   border: 2px solid grey;
-
 }
-
 .profileImage {
   flex: 1;
   display: flex;
@@ -100,9 +115,7 @@ body {
 
 }
 .header .nextToProfile a {
-  /*display: inline;*/
   align-self: flex-end;
-
   margin: 40px;
   color: white;
 }
@@ -115,27 +128,14 @@ body {
 .header img {
   width: 50px;
   height: 50px;
+  /*transition example*/
   transition: all 5s;
 }
 .header img:hover {
+  /*transform example*/
   transform: rotate(360deg);
 }
 
-/*
-.profileImage h1 {
-  position: relative;
-  display: inline-block;
-  transform: rotate(90deg);
-  top: 150px;
-  left: -95px;
-  color: white;
-  align-items: stretch;
-}
-.nextToProfile {
-  flex: 3;
-  align-self: stretch;
-
-}*/
 .belowHeader {
   position: relative;
   max-height: 100%;
@@ -143,7 +143,6 @@ body {
   align-items: stretch;
   color: white;
 }
-
 .belowHeader .col:first-child {
   position: relative;
   height: 100%;
@@ -160,11 +159,6 @@ color: white;
   position: absolute;
   align-self: center;
 }
-
-
-
-
-
 #sun {
     align-self: center;
     position: relative;
@@ -177,18 +171,13 @@ color: white;
     background-color: red;
     border: 2px solid red;
 }
-
 #earth {
     align-self: center;
     position: relative;
-
     height:40px;
     width: 40px;
     border-radius:  100%;
-
 }
-
-
 #earth-orbit {
     align-self: center;
     position:relative;
@@ -198,16 +187,13 @@ color: white;
     border-width: 2px;
     border-color: black;
     border-radius: 100%;
-
-       -webkit-animation: spin-right 10s linear infinite;
+    /*animation example*/
+    -webkit-animation: spin-right 10s linear infinite;
      -moz-animation: spin-right 10s linear infinite;
       -ms-animation: spin-right 10s linear infinite;
        -o-animation: spin-right 10s linear infinite;
           animation: spin-right 10s linear infinite;
 }
-
-
-
 @-webkit-keyframes spin-right {
   100% {
     -webkit-transform: rotate(360deg);
@@ -215,32 +201,27 @@ color: white;
         -ms-transform: rotate(360deg);
          -o-transform: rotate(360deg);
             transform: rotate(360deg);
-          }
+  }
 }
-
+/*ROW THINK*/
 .thinks {
-
   align-items: center;
   justify-content: center;
   border: 2px solid black;
 }
 .think {
   flex: 1;
-
   flex: 0;
   max-height: 100%;
   max-width: 100%;
   flex-direction: column;
   flex-grow: 1;
-
 }
-
 .think h1 {
   display: inline;
   margin: 5px 0;
 align-self: center;
 }
-
 .think span:first-child {
   color: #757575;
 }
@@ -270,18 +251,13 @@ align-self: center;
   position: relative;
   top: 10px;
 }
+/*ROW BINOCULARS*/
 .binoculars {
-
   margin: 0;
   padding: 10px 15px;
-  background: url(../img/map.jpg);
+  background-size: cover;
 }
 .binoculars .col {
-  box-shadow: none;
-  border-top-left-radius: 50px;
-  border-bottom-left-radius: 50px;
-  border-top-right-radius: 50px;
-  border-bottom-right-radius: 50px;
   margin: 0;
   padding: 10px;
   background-color: #383838;
@@ -290,7 +266,12 @@ align-self: center;
   width: 100%;
   border-radius: 100px;
 }
-
+#travel {
+  text-align: center;
+  margin: 40px;
+  font-family: 'Poiret One', cursive;
+}
+/*QUERIES*/
 @media screen and (min-width: 1800px) {
   .header {
     height: 1200px;
@@ -314,11 +295,8 @@ align-self: center;
     flex-direction: column;
     font-size: 25px;
   }
-
-
 }
 @media screen and (max-width: 499px) {
-
   .header {
     flex-direction: column;
     background-position: center;
@@ -327,10 +305,12 @@ align-self: center;
   .header .profileImage {
     align-self: stretch;
     flex: 1;
-
   }
   .profileImage  h1 {
     align-items: stretch;
+  }
+  .pdx {
+    display: none;
   }
 
 }
