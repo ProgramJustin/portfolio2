@@ -1,0 +1,116 @@
+.belowHeader {
+  position: relative;
+  max-height: 100%;
+  max-width: 100%;
+  align-items: stretch;
+  color: white;
+}
+.belowHeader .col:first-child {
+  position: relative;
+  height: 100%;
+  max-width: 100%;
+  align-content: center;
+  background-color: black;
+color: white;
+}
+.belowHeader .col:last-child {
+  background: url(../img/bern.jpg);
+  background-size: cover;
+}
+.belowHeader .col:first-child h1 {
+  position: absolute;
+  align-self: center;
+}
+#sun {
+    align-self: center;
+    position: relative;
+    top: 100px;
+    width: 100px;
+    height: 100px;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 100%;
+    background-color: red;
+    border: 2px solid red;
+}
+#earth {
+    align-self: center;
+    position: relative;
+    height:40px;
+    width: 40px;
+    border-radius:  100%;
+}
+#earth-orbit {
+    align-self: center;
+    position:relative;
+    bottom: 50px;
+    width: 200px;
+    height: 200px;
+    border-width: 2px;
+    border-color: black;
+    border-radius: 100%;
+    /*animation example*/
+    -webkit-animation: spin-right 10s linear infinite;
+     -moz-animation: spin-right 10s linear infinite;
+      -ms-animation: spin-right 10s linear infinite;
+       -o-animation: spin-right 10s linear infinite;
+          animation: spin-right 10s linear infinite;
+}
+@-webkit-keyframes spin-right {
+  100% {
+    -webkit-transform: rotate(360deg);
+       -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+         -o-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+/*THINK*/
+.thinks {
+  align-items: center;
+  justify-content: center;
+  border: 2px solid black;
+}
+.think {
+  flex: 1;
+  flex: 0;
+  max-height: 100%;
+  max-width: 100%;
+  flex-direction: column;
+  flex-grow: 1;
+}
+.think h1 {
+  display: inline;
+  margin: 5px 0;
+align-self: center;
+}
+.think span:first-child {
+  color: #757575;
+}
+.think span:nth-child(2) {
+  color: #9E9E9E;
+}
+#google span:nth-child(1) {
+  color: #4285F4;
+}
+#google span:nth-child(2) {
+  color: #EA4335;
+}
+#google span:nth-child(3) {
+  color: #FBBC05;
+}
+#google span:nth-child(4) {
+  color: #3D85FD;
+}
+#google span:nth-child(5) {
+  color: #34A853;
+}
+#google span:nth-child(6) {
+  color: #EA4335;
+}
+#google span:hover {
+  transform: rotate(10deg);
+  position: relative;
+  top: 10px;
+}

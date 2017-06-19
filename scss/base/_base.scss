@@ -1,0 +1,64 @@
+html, body {
+  box-sizing: border-box;
+
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: #BFBFBF;
+  font-size: 1.2em;
+  line-height: 1.375em;
+  padding: 0;
+  margin: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+.row {
+  max-width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+}
+/*PARENT*/
+.col {
+  box-shadow: 10px 10px 10px darkgray;
+  max-width: 100%;
+  justify-content: center;
+  flex: 1;
+  padding: .6em;
+  margin: .6em;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: white;
+}
+.col:hover {
+  box-shadow: none;
+}
+
+/*ROW BINOCULARS*/
+.binoculars {
+  margin: 0;
+  padding: 10px 15px;
+  background-size: cover;
+}
+.binoculars .col {
+  margin: 0;
+  padding: 10px;
+  background-color: #383838;
+}
+.binoculars img {
+  width: 100%;
+  border-radius: 100px;
+}
+#travel {
+  text-align: center;
+  margin: 40px;
+  font-family: 'Poiret One', cursive;
+}

@@ -1,0 +1,94 @@
+/*ROW HEADER*/
+.header {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  background-image: linear-gradient(
+    rgba(100, 0, 0, 0.45),
+    rgba(100, 0, 0, 0.45)
+    ), url(../img/openRoad.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-color: black;
+    color: white;
+}
+ .header .tab {
+  position: fixed;
+  z-index: 2;
+  top: -120px;
+  right: 40px;
+  background-color: white;
+  height: 150px;
+  width: 100px;
+  text-align: center;
+}
+.tab:hover {
+  top: 0;
+}
+.tab a {
+  text-decoration: none;
+  color: black;
+}
+.tab a p {
+  background-color: none;
+  margin: 30px 0;
+  font-family: 'Poiret One', cursive;
+
+}
+.header div {
+  box-shadow: none;
+  background: transparent;
+  align-self: center;
+  margin: 0;
+  padding: 0;
+}
+.header h1 {
+  align-self: center;
+  font-size: 300%;
+  display: inline;
+  padding:60px;
+  letter-spacing: 1px;
+  align-self: flex-end;
+  font-family: 'Poiret One', cursive;
+}
+
+.profileImage {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  max-width: 100%;
+}
+.nextToProfile {
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  overflow: auto;
+  width: 100%;
+}
+.header .nextToProfile a {
+  align-self: flex-end;
+  margin: 40px;
+  color: white;
+}
+.nextToProfile a:nth-child(2) {
+  align-self: center;
+}
+.header img:first-child {
+  border-radius: 100px;
+}
+.header img {
+  width: 50px;
+  height: 50px;
+  /*transition example*/
+  transition: all 5s;
+}
+.header img:hover {
+  /*transform example*/
+  transform: rotate(360deg);
+}
