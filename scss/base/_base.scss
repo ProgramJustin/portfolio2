@@ -38,27 +38,3 @@ body {
   align-items: flex-start;
   background-color: white;
 }
-.col:hover {
-  box-shadow: none;
-}
-
-/*ROW BINOCULARS*/
-.binoculars {
-  margin: 0;
-  padding: 10px 15px;
-  background-size: cover;
-}
-.binoculars .col {
-  margin: 0;
-  padding: 10px;
-  background-color: #383838;
-}
-.binoculars img {
-  width: 100%;
-  border-radius: 100px;
-}
-#travel {
-  text-align: center;
-  margin: 40px;
-  font-family: 'Poiret One', cursive;
-}

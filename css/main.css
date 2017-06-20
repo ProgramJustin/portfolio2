@@ -35,29 +35,6 @@ body {
   align-items: flex-start;
   background-color: white; }
 
-.col:hover {
-  box-shadow: none; }
-
-/*ROW BINOCULARS*/
-.binoculars {
-  margin: 0;
-  padding: 10px 15px;
-  background-size: cover; }
-
-.binoculars .col {
-  margin: 0;
-  padding: 10px;
-  background-color: #383838; }
-
-.binoculars img {
-  width: 100%;
-  border-radius: 100px; }
-
-#travel {
-  text-align: center;
-  margin: 40px;
-  font-family: 'Poiret One', cursive; }
-
 /*ROW HEADER*/
 .header {
   display: flex;
@@ -122,14 +99,14 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  color: white;
+  color: #FFF;
   overflow: auto;
   width: 100%; }
 
 .header .nextToProfile a {
   align-self: flex-end;
   margin: 40px;
-  color: white; }
+  color: #FFF; }
 
 .nextToProfile a:nth-child(2) {
   align-self: center; }
@@ -152,7 +129,7 @@ body {
   max-height: 100%;
   max-width: 100%;
   align-items: stretch;
-  color: white; }
+  color: #FFF; }
 
 .belowHeader .col:first-child {
   position: relative;
@@ -160,7 +137,7 @@ body {
   max-width: 100%;
   align-content: center;
   background-color: black;
-  color: white; }
+  color: #FFF; }
 
 .belowHeader .col:last-child {
   background: url(../img/bern.jpg);
@@ -231,34 +208,51 @@ body {
   margin: 5px 0;
   align-self: center; }
 
-.think span:first-child {
-  color: #757575; }
-
-.think span:nth-child(2) {
-  color: #9E9E9E; }
-
-#google span:nth-child(1) {
-  color: #4285F4; }
-
-#google span:nth-child(2) {
-  color: #EA4335; }
-
-#google span:nth-child(3) {
-  color: #FBBC05; }
-
-#google span:nth-child(4) {
-  color: #3D85FD; }
-
-#google span:nth-child(5) {
-  color: #34A853; }
-
-#google span:nth-child(6) {
-  color: #EA4335; }
-
-#google span:hover {
+.g1 span:hover {
   transform: rotate(10deg);
   position: relative;
   top: 10px; }
+
+.col:hover {
+  box-shadow: none; }
+
+/*ROW BINOCULARS*/
+.binoculars {
+  margin: 0;
+  padding: 10px 15px;
+  background-size: cover; }
+
+.binoculars .col {
+  margin: 0;
+  padding: 10px;
+  background-color: #383838; }
+
+.binoculars img {
+  width: 100%;
+  border-radius: 100px; }
+
+#travel {
+  text-align: center;
+  margin: 40px;
+  font-family: 'Poiret One', cursive; }
+
+.g-1 {
+  color: #4285F4; }
+
+.g-2 {
+  color: #EA4335; }
+
+.g-3 {
+  color: #FBBC05; }
+
+.g-4 {
+  color: #3D85FD; }
+
+.g-5 {
+  color: #34A853; }
+
+.g-6 {
+  color: #EA4335; }
 
 @media screen and (min-width: 1800px) {
   .header {

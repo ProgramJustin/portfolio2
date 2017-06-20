@@ -18,8 +18,6 @@
         'pages/home';
 
         //abstracts -
-        @import 'abstracts/functions',
-        'abstracts/mixins',
-        'abstracts/placeholders',
-        'abstracts/variables',
-        'abstracts/queries';
+        @import 'abstracts/mixins',
+                'abstracts/variables',
+                'abstracts/queries';

@@ -1,4 +1,6 @@
 /*ROW HEADER*/
+@import '../abstracts/variables';
+
 .header {
   display: flex;
   flex-direction: row;
@@ -60,21 +62,21 @@
   flex: 1;
   display: flex;
   flex-direction: row;
-  width: 100%;
+  width: $width;
   max-width: 100%;
 }
 .nextToProfile {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  color: white;
+  color: $color1;
   overflow: auto;
-  width: 100%;
+  width: $width;
 }
 .header .nextToProfile a {
   align-self: flex-end;
   margin: 40px;
-  color: white;
+  color: $color1;
 }
 .nextToProfile a:nth-child(2) {
   align-self: center;

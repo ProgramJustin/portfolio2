@@ -1,0 +1,13 @@
+// @function my-calculation-function($some-number, $another-number){
+//   @return $some-number + $another-number
+// }
+
+
+
+  @each $name, $value in $map {
+
+  .g-#{$i} {
+    color: $value;
+  }
+  $i: $i + 1;
+}
