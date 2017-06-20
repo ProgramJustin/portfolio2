@@ -208,7 +208,7 @@ body {
   margin: 5px 0;
   align-self: center; }
 
-.g1 span:hover {
+.think h1 span:hover {
   transform: rotate(10deg);
   position: relative;
   top: 10px; }
