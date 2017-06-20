@@ -208,10 +208,11 @@ body {
   margin: 5px 0;
   align-self: center; }
 
-.think h1 span:hover {
-  transform: rotate(10deg);
-  position: relative;
-  top: 10px; }
+.think h1:first-child {
+  color: #757575; }
+
+.think h1:nth-child(2) {
+  color: #9C9C9C; }
 
 .col:hover {
   box-shadow: none; }
@@ -239,20 +240,44 @@ body {
 .g-1 {
   color: #4285F4; }
 
+.g-1:hover {
+  position: relative;
+  top: 10px; }
+
 .g-2 {
   color: #EA4335; }
+
+.g-2:hover {
+  position: relative;
+  top: 10px; }
 
 .g-3 {
   color: #FBBC05; }
 
+.g-3:hover {
+  position: relative;
+  top: 10px; }
+
 .g-4 {
   color: #3D85FD; }
+
+.g-4:hover {
+  position: relative;
+  top: 10px; }
 
 .g-5 {
   color: #34A853; }
 
+.g-5:hover {
+  position: relative;
+  top: 10px; }
+
 .g-6 {
   color: #EA4335; }
+
+.g-6:hover {
+  position: relative;
+  top: 10px; }
 
 @media screen and (min-width: 1800px) {
   .header {

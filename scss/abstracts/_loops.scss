@@ -1,0 +1,10 @@
+@each $name, $value in $map {
+.g-#{$i} {
+  color: $value;
+}
+.g-#{$i}:hover {
+  position: relative;
+  top: 10px;
+}
+$i: $i + 1;
+}

@@ -85,13 +85,13 @@
   margin: 5px 0;
 align-self: center;
 }
-
-
-.think h1 span:hover {
-  transform: rotate(10deg);
-  position: relative;
-  top: 10px;
+.think h1:first-child {
+  color: $think;
 }
+.think h1:nth-child(2) {
+  color: $with;
+}
+
 
 .col:hover {
   box-shadow: none;
