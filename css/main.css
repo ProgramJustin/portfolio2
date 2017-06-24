@@ -57,7 +57,9 @@ body {
   background-color: white;
   height: 150px;
   width: 100px;
-  text-align: center; }
+  text-align: center;
+  border: 2px solid lightgray;
+  border-radius: 15px; }
 
 .tab:hover {
   top: 0; }
