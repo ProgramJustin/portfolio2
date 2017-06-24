@@ -72,6 +72,10 @@
   justify-content: center;
   border: 2px solid black;
 }
+a {
+  text-decoration: none;
+  color: $color1;
+}
 .think {
   flex: 1;
   flex: 0;
