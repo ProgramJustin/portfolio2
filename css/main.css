@@ -40,7 +40,7 @@ body {
   display: flex;
   flex-direction: row;
   height: 100vh;
-  background-image: linear-gradient(rgba(100, 0, 0, 0.45), rgba(100, 0, 0, 0.45)), url(../img/openRoad.jpg);
+  background-image: linear-gradient(rgba(100, 0, 0, 0.45), rgba(100, 0, 0, 0.45)), url(../img/openRoad.JPG);
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -216,21 +216,6 @@ body {
 
 .col:hover {
   box-shadow: none; }
-
-/*ROW BINOCULARS*/
-.binoculars {
-  margin: 0;
-  padding: 10px 15px;
-  background-size: cover; }
-
-.binoculars .col {
-  margin: 0;
-  padding: 10px;
-  background-color: #383838; }
-
-.binoculars img {
-  width: 100%;
-  border-radius: 100px; }
 
 #travel {
   text-align: center;
