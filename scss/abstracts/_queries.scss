@@ -35,11 +35,12 @@
     align-self: stretch;
     flex: 1;
   }
+  .belowHeader a:last-child {
+    height: 300px;
+  }
   .profileImage  h1 {
     align-items: stretch;
   }
-  .pdx {
-    display: none;
-  }
+
 
 }

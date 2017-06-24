@@ -299,10 +299,10 @@ a {
     align-self: stretch;
     flex: 1; }
 
-  .profileImage h1 {
-    align-items: stretch; }
+  .belowHeader a:last-child {
+    height: 300px; }
 
-  .pdx {
-    display: none; } }
+  .profileImage h1 {
+    align-items: stretch; } }
 
 /*# sourceMappingURL=main.css.map */
