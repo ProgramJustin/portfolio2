@@ -34,6 +34,9 @@ body {
   align-items: flex-start;
   background-color: white; }
 
+.col:hover {
+  box-shadow: none; }
+
 /*ROW HEADER*/
 .header {
   display: flex;
@@ -218,9 +221,6 @@ a {
 
 .think h1:nth-child(2) {
   color: #9C9C9C; }
-
-.col:hover {
-  box-shadow: none; }
 
 #travel {
   text-align: center;
