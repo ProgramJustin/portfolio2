@@ -279,15 +279,18 @@ a {
   .header img {
     height: 100px;
     width: 100px; } }
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 971px) {
   .row {
     display: flex;
     flex-direction: row; }
 
   .header {
     flex-direction: column;
-    font-size: 25px; } }
-@media screen and (max-width: 499px) {
+    font-size: 25px; }
+
+  .col {
+    min-width: 300px; } }
+@media screen and (max-width: 970px) {
   .header {
     flex-direction: column;
     background-position: center;
